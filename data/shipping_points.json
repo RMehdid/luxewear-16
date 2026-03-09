@@ -1,0 +1,517 @@
+[
+    {
+        "wilaya": "16 ALGER",
+        "home_price": 500,
+        "points": [
+            {
+                "name": "Stopdesk",
+                "price": 370
+            }
+        ]
+    },
+    {
+        "wilaya": "09 BLIDA",
+        "home_price": 600,
+        "points": [
+            {
+                "name": "Stopdesk",
+                "price": 470
+            }
+        ]
+    },
+    {
+        "wilaya": "35 BOUMERDES",
+        "home_price": 700,
+        "points": [
+            {
+                "name": "Stopdesk",
+                "price": 520
+            }
+        ]
+    },
+    {
+        "wilaya": "42 TIPAZA",
+        "home_price": 700,
+        "points": [
+            {
+                "name": "Stopdesk",
+                "price": 520
+            }
+        ]
+    },
+    {
+        "wilaya": "15 TIZI OUZOU",
+        "home_price": 750,
+        "points": [
+            {
+                "name": "Stopdesk",
+                "price": 520
+            }
+        ]
+    },
+    {
+        "wilaya": "31 ORAN",
+        "home_price": 800,
+        "points": [
+            {
+                "name": "Stopdesk",
+                "price": 520
+            }
+        ]
+    },
+    {
+        "wilaya": "10 BOUIRA",
+        "home_price": 700,
+        "points": [
+            {
+                "name": "Stopdesk",
+                "price": 520
+            }
+        ]
+    },
+    {
+        "wilaya": "26 MEDEA",
+        "home_price": 800,
+        "points": [
+            {
+                "name": "Stopdesk",
+                "price": 520
+            }
+        ]
+    },
+    {
+        "wilaya": "19 SETIF",
+        "home_price": 800,
+        "points": [
+            {
+                "name": "Stopdesk",
+                "price": 520
+            }
+        ]
+    },
+    {
+        "wilaya": "25 CONSTANTINE",
+        "home_price": 800,
+        "points": [
+            {
+                "name": "Stopdesk",
+                "price": 520
+            }
+        ]
+    },
+    {
+        "wilaya": "02 CHLEF",
+        "home_price": 850,
+        "points": [
+            {
+                "name": "Stopdesk",
+                "price": 520
+            }
+        ]
+    },
+    {
+        "wilaya": "06 BEJAIA",
+        "home_price": 800,
+        "points": [
+            {
+                "name": "Stopdesk",
+                "price": 520
+            }
+        ]
+    },
+    {
+        "wilaya": "23 ANNABA",
+        "home_price": 850,
+        "points": [
+            {
+                "name": "Stopdesk",
+                "price": 520
+            }
+        ]
+    },
+    {
+        "wilaya": "34 BOURDJ BOU ARRERIDJ",
+        "home_price": 800,
+        "points": [
+            {
+                "name": "Stopdesk",
+                "price": 520
+            }
+        ]
+    },
+    {
+        "wilaya": "27 MOSTAGANEM",
+        "home_price": 900,
+        "points": [
+            {
+                "name": "Stopdesk",
+                "price": 520
+            }
+        ]
+    },
+    {
+        "wilaya": "18 JIJEL",
+        "home_price": 900,
+        "points": [
+            {
+                "name": "Stopdesk",
+                "price": 520
+            }
+        ]
+    },
+    {
+        "wilaya": "44 AIN DEFLA",
+        "home_price": 900,
+        "points": [
+            {
+                "name": "Stopdesk",
+                "price": 520
+            }
+        ]
+    },
+    {
+        "wilaya": "46 AIN TIMOUCHENT",
+        "home_price": 900,
+        "points": [
+            {
+                "name": "Stopdesk",
+                "price": 520
+            }
+        ]
+    },
+    {
+        "wilaya": "04 OUM EL BOUAGHI",
+        "home_price": 850,
+        "points": [
+            {
+                "name": "Stopdesk",
+                "price": 520
+            }
+        ]
+    },
+    {
+        "wilaya": "05 BATNA",
+        "home_price": 900,
+        "points": [
+            {
+                "name": "Stopdesk",
+                "price": 520
+            }
+        ]
+    },
+    {
+        "wilaya": "12 TEBESSA",
+        "home_price": 900,
+        "points": [
+            {
+                "name": "Stopdesk",
+                "price": 570
+            }
+        ]
+    },
+    {
+        "wilaya": "20 SAIDA",
+        "home_price": 900,
+        "points": [
+            {
+                "name": "Stopdesk",
+                "price": 570
+            }
+        ]
+    },
+    {
+        "wilaya": "21 SKIKDA",
+        "home_price": 900,
+        "points": [
+            {
+                "name": "Stopdesk",
+                "price": 520
+            }
+        ]
+    },
+    {
+        "wilaya": "22 SIDI BEL ABBES",
+        "home_price": 900,
+        "points": [
+            {
+                "name": "Stopdesk",
+                "price": 520
+            }
+        ]
+    },
+    {
+        "wilaya": "24 GUELMA",
+        "home_price": 900,
+        "points": [
+            {
+                "name": "Stopdesk",
+                "price": 520
+            }
+        ]
+    },
+    {
+        "wilaya": "36 TAREF",
+        "home_price": 850,
+        "points": [
+            {
+                "name": "Stopdesk",
+                "price": 520
+            }
+        ]
+    },
+    {
+        "wilaya": "43 MILA",
+        "home_price": 900,
+        "points": [
+            {
+                "name": "Stopdesk",
+                "price": 520
+            }
+        ]
+    },
+    {
+        "wilaya": "29 MASCARA",
+        "home_price": 900,
+        "points": [
+            {
+                "name": "Stopdesk",
+                "price": 520
+            }
+        ]
+    },
+    {
+        "wilaya": "40 KHENCHLA",
+        "home_price": 900,
+        "points": [
+            {
+                "name": "Stopdesk",
+                "price": 520
+            }
+        ]
+    },
+    {
+        "wilaya": "28 MSILA",
+        "home_price": 850,
+        "points": [
+            {
+                "name": "Stopdesk",
+                "price": 570
+            }
+        ]
+    },
+    {
+        "wilaya": "14 TIARET",
+        "home_price": 850,
+        "points": [
+            {
+                "name": "Stopdesk",
+                "price": 520
+            }
+        ]
+    },
+    {
+        "wilaya": "38 TISSEMSILT",
+        "home_price": 900,
+        "points": [
+            {
+                "name": "Stopdesk",
+                "price": 520
+            }
+        ]
+    },
+    {
+        "wilaya": "41 Souk ahras",
+        "home_price": 900,
+        "points": [
+            {
+                "name": "Stopdesk",
+                "price": 520
+            }
+        ]
+    },
+    {
+        "wilaya": "48 RELIZANE",
+        "home_price": 900,
+        "points": [
+            {
+                "name": "Stopdesk",
+                "price": 520
+            }
+        ]
+    },
+    {
+        "wilaya": "13 TELEMCEN",
+        "home_price": 900,
+        "points": [
+            {
+                "name": "Stopdesk",
+                "price": 570
+            }
+        ]
+    },
+    {
+        "wilaya": "39 EL OUED",
+        "home_price": 950,
+        "points": [
+            {
+                "name": "Stopdesk",
+                "price": 670
+            }
+        ]
+    },
+    {
+        "wilaya": "30 OUARGLA",
+        "home_price": 950,
+        "points": [
+            {
+                "name": "Stopdesk",
+                "price": 670
+            }
+        ]
+    },
+    {
+        "wilaya": "07 BISKRA",
+        "home_price": 950,
+        "points": [
+            {
+                "name": "Stopdesk",
+                "price": 620
+            }
+        ]
+    },
+    {
+        "wilaya": "51 OULED DJELLAL",
+        "home_price": 950,
+        "points": [
+            {
+                "name": "Stopdesk",
+                "price": 620
+            }
+        ]
+    },
+    {
+        "wilaya": "17 DJELFA",
+        "home_price": 950,
+        "points": [
+            {
+                "name": "Stopdesk",
+                "price": 570
+            }
+        ]
+    },
+    {
+        "wilaya": "03 LAGOUATE",
+        "home_price": 950,
+        "points": [
+            {
+                "name": "Stopdesk",
+                "price": 620
+            }
+        ]
+    },
+    {
+        "wilaya": "55 TOUGGOURT",
+        "home_price": 950,
+        "points": [
+            {
+                "name": "Stopdesk",
+                "price": 670
+            }
+        ]
+    },
+    {
+        "wilaya": "32 EL BAYADH",
+        "home_price": 1100,
+        "points": [
+            {
+                "name": "Stopdesk",
+                "price": 670
+            }
+        ]
+    },
+    {
+        "wilaya": "57 M'GHAIR",
+        "home_price": 950,
+        "points": []
+    },
+    {
+        "wilaya": "58 MENIAA",
+        "home_price": 1000,
+        "points": []
+    },
+    {
+        "wilaya": "45 NAAMA",
+        "home_price": 1100,
+        "points": [
+            {
+                "name": "Stopdesk",
+                "price": 670
+            }
+        ]
+    },
+    {
+        "wilaya": "08 BECHAR",
+        "home_price": 1100,
+        "points": [
+            {
+                "name": "Stopdesk",
+                "price": 720
+            }
+        ]
+    },
+    {
+        "wilaya": "47 GHERDAIA",
+        "home_price": 950,
+        "points": [
+            {
+                "name": "Stopdesk",
+                "price": 620
+            }
+        ]
+    },
+    {
+        "wilaya": "52 BENI ABBES",
+        "home_price": 1100,
+        "points": [
+            {
+                "name": "Stopdesk",
+                "price": 970
+            }
+        ]
+    },
+    {
+        "wilaya": "01 ADRAR",
+        "home_price": 1400,
+        "points": [
+            {
+                "name": "Stopdesk",
+                "price": 970
+            }
+        ]
+    },
+    {
+        "wilaya": "49 TIMIMOUN",
+        "home_price": 1400,
+        "points": []
+    },
+    {
+        "wilaya": "11 TAMANRASSET",
+        "home_price": 1600,
+        "points": [
+            {
+                "name": "Stopdesk",
+                "price": 1120
+            }
+        ]
+    },
+    {
+        "wilaya": "53 AIN SALAH",
+        "home_price": 1600,
+        "points": []
+    },
+    {
+        "wilaya": "54 AIN GUZZAM",
+        "home_price": 1600,
+        "points": []
+    }
+]

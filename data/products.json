@@ -1,0 +1,62 @@
+[
+    {
+        "id": "shirt",
+        "slug": "shirt",
+        "name": "Shirt",
+        "description": "Premium quality shirt designed for extreme comfort and durability. Perfect for your daily wear with a modern fit.",
+        "features": [
+            "Premium quality",
+            "Modern fit",
+            "Premium leather"
+        ],
+        "price": 2000,
+        "sizes": [
+            "40",
+            "41",
+            "42",
+            "43"
+        ],
+        "colors": [
+            "Black",
+            "White"
+        ],
+        "images": [
+            "/images/products/shirt/black-1.JPG",
+            "/images/products/shirt/black-2.JPG",
+            "/images/products/shirt/black-3.JPG",
+            "/images/products/shirt/white-1.JPG",
+            "/images/products/shirt/white-2.JPG",
+            "/images/products/shirt/white-3.JPG"
+        ]
+    },
+    {
+        "id": "prada",
+        "slug": "prada-shoes",
+        "name": "Prada Shoes",
+        "description": "Premium quality shoes designed for extreme comfort and durability. Perfect for your daily wear with a modern fit.",
+        "features": [
+            "Premium quality",
+            "Modern fit",
+            "Premium leather"
+        ],
+        "price": 2000,
+        "sizes": [
+            "40",
+            "41",
+            "42",
+            "43"
+        ],
+        "colors": [
+            "Black",
+            "White"
+        ],
+        "images": [
+            "/images/products/prada-shoes/black-1.JPG",
+            "/images/products/prada-shoes/black-2.JPG",
+            "/images/products/prada-shoes/black-3.JPG",
+            "/images/products/prada-shoes/white-1.JPG",
+            "/images/products/prada-shoes/white-2.JPG",
+            "/images/products/prada-shoes/white-3.JPG"
+        ]
+    }
+]
