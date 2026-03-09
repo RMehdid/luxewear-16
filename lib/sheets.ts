@@ -35,7 +35,7 @@ export async function saveOrder(order: Order): Promise<SaveOrderResult> {
         // Date | Order ID | Product | Variant | Quantity | Name | Phone | Wilaya | Address/Relais | Shipping Route | Subtotal | Shipping Fee | Total Price
         const response = await sheets.spreadsheets.values.append({
             spreadsheetId,
-            range: 'Sheet1!A:M',
+            range: 'Commandes!A:M',
             valueInputOption: 'USER_ENTERED',
             requestBody: {
                 values: [
