@@ -19,10 +19,13 @@ const parseImages = (str: string | undefined): string[] => {
     return str.split(',').map(item => {
         let url = item.trim();
         // Match standard drive share links like https://drive.google.com/file/d/THIS_IS_THE_ID/view
-        const driveRegex = /drive\.google\.com\/file\/d\/([^\/]+)/;
-        const match = url.match(driveRegex);
+        const driveRegex = /drive\.google\.com\/file\/d\/([^\/\?]+)/;
+        // Also match open?id= format
+        const openRegex = /drive\.google\.com\/open\?id=([^&]+)/;
+        const match = url.match(driveRegex) || url.match(openRegex);
         if (match && match[1]) {
-            url = `https://drive.google.com/uc?export=view&id=${match[1]}`;
+            // Use thumbnail endpoint - more reliable than uc?export=view
+            url = `https://drive.google.com/thumbnail?id=${match[1]}&sz=s1600`;
         }
         return url;
     }).filter(Boolean);
