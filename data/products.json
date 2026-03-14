@@ -10,6 +10,19 @@
             "Premium leather"
         ],
         "price": 2000,
+        "oldPrice": 3000,
+        "reviews": [
+            {
+                "name": "Jane Doe",
+                "text": "Amazing quality, very comfortable!",
+                "rating": 5
+            },
+            {
+                "name": "John Smith",
+                "text": "Good fit but a bit expensive.",
+                "rating": 4
+            }
+        ],
         "sizes": [
             "40",
             "41",
@@ -40,6 +53,14 @@
             "Premium leather"
         ],
         "price": 2000,
+        "oldPrice": 2500,
+        "reviews": [
+            {
+                "name": "Alice Cooper",
+                "text": "Best shoes I've ever owned.",
+                "rating": 5
+            }
+        ],
         "sizes": [
             "40",
             "41",

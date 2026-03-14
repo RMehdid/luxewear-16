@@ -3,6 +3,8 @@ export interface Product {
     slug: string;
     name: string;
     price: number;
+    oldPrice?: number;
+    reviews?: import('./review').Review[];
     description: string;
     features: string[];
     sizes: string[];

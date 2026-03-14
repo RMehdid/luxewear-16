@@ -31,6 +31,52 @@ const parseImages = (str: string | undefined): string[] => {
     }).filter(Boolean);
 };
 
+/**
+ * Parses a string of reviews separated by `/`.
+ * Expected format: "Name - Review text - 5 stars / Name 2 - Review 2 - 4 stars"
+ */
+const parseReviews = (str: string | undefined): import('@/types/review').Review[] => {
+    if (!str) return [];
+
+    return str.split('/')
+        .map(reviewStr => reviewStr.trim())
+        .filter(Boolean)
+        .map(reviewStr => {
+            // Split by '-' but we need to be careful if the review text itself contains dashes
+            // We'll split by ' - ' assuming that's the separator used, or just parse from ends.
+            // Format: Name - Review - int stars
+            const parts = reviewStr.split(' - ');
+
+            if (parts.length >= 3) {
+                const name = parts[0].trim();
+                // Extract stars (last part)
+                const starsPart = parts[parts.length - 1].trim();
+                const rating = parseInt(starsPart, 10) || 5; // Default to 5 if parse fails
+
+                // The review text is everything in between
+                const text = parts.slice(1, parts.length - 1).join(' - ').trim();
+
+                return { name, text, rating };
+            }
+
+            // Fallback for poorly formatted reviews
+            const fallbackParts = reviewStr.split('-');
+            if (fallbackParts.length >= 2) {
+                return {
+                    name: fallbackParts[0].trim(),
+                    text: fallbackParts.slice(1).join('-').trim(),
+                    rating: 5
+                }
+            }
+
+            return {
+                name: "Customer",
+                text: reviewStr,
+                rating: 5
+            };
+        });
+};
+
 export async function getProducts(): Promise<Product[]> {
     try {
         if (!process.env.GOOGLE_PRIVATE_KEY || !process.env.GOOGLE_CLIENT_EMAIL || !process.env.SHEET_ID) {
@@ -53,10 +99,10 @@ export async function getProducts(): Promise<Product[]> {
         const spreadsheetId = process.env.SHEET_ID;
 
         // Fetch data from the "Products" tab
-        // Expected Columns: ID | Slug | Name | Description | Features | Price | Sizes | Colors | Image URLs
+        // Expected Columns: ID | Slug | Name | Description | Features | Old Price | Sizes | Colors | New Price | Reviews | Image URLs
         const response = await sheets.spreadsheets.values.get({
             spreadsheetId,
-            range: 'Products!A2:I', // Start at A2 to skip headers
+            range: 'Products!A2:K', // Start at A2 to skip headers
         });
 
         const rows = response.data.values;
@@ -74,9 +120,11 @@ export async function getProducts(): Promise<Product[]> {
                 name = '',
                 description = '',
                 featuresStr = '',
-                priceStr = '0',
+                oldPriceStr = '',
                 sizesStr = '',
                 colorsStr = '',
+                newPriceStr = '0',
+                reviewsStr = '',
                 imagesStr = ''
             ] = row;
 
@@ -86,7 +134,9 @@ export async function getProducts(): Promise<Product[]> {
                 name,
                 description,
                 features: parseArray(featuresStr),
-                price: parseInt(priceStr, 10) || 0,
+                price: parseInt(newPriceStr, 10) || 0,
+                oldPrice: parseInt(oldPriceStr, 10) || undefined,
+                reviews: parseReviews(reviewsStr),
                 sizes: parseArray(sizesStr),
                 colors: parseArray(colorsStr),
                 images: parseImages(imagesStr),

@@ -5,6 +5,7 @@ import { Product } from '@/types/product';
 import ProductGallery from '@/components/product/ProductGallery';
 import ProductInfo from '@/components/product/ProductInfo';
 import OrderForm from '@/components/order/OrderForm';
+import Reviews from '@/components/product/Reviews';
 
 interface Props {
     product: Product;
@@ -39,6 +40,12 @@ export default function ProductLayout({ product }: Props) {
                         </div>
 
                         <OrderForm product={product} selectedColor={selectedColor} onColorChange={setSelectedColor} />
+
+                        {product.reviews && product.reviews.length > 0 && (
+                            <div className="mt-8">
+                                <Reviews reviews={product.reviews} />
+                            </div>
+                        )}
                     </div>
 
                 </div>

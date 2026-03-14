@@ -11,8 +11,20 @@ export default function ProductInfo({ product }: Props) {
             <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
                 {product.name}
             </h1>
-            <div className="text-2xl font-medium text-gray-900 mt-2">
-                {formatPrice(product.price)}
+            <div className="mt-2 flex items-center gap-3">
+                <span className="text-2xl font-bold text-gray-900">
+                    {formatPrice(product.price)}
+                </span>
+                {product.oldPrice && product.oldPrice > product.price && (
+                    <>
+                        <span className="text-lg text-gray-500 line-through">
+                            {formatPrice(product.oldPrice)}
+                        </span>
+                        <span className="bg-red-100 text-red-700 text-sm font-semibold px-2.5 py-0.5 rounded">
+                            -{Math.round(((product.oldPrice - product.price) / product.oldPrice) * 100)}%
+                        </span>
+                    </>
+                )}
             </div>
             <div className="mt-4 prose prose-sm text-gray-500">
                 <p>{product.description}</p>
